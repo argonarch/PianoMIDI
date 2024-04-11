@@ -32,8 +32,8 @@ boolean keyPressed[NUM_ROWS][NUM_COLS];
 uint8_t keyToMidiMap[NUM_ROWS][NUM_COLS];
 
 // bitmasks for scanning columns
-int bits[] = {B00000001, B00000010, B00000100, B00001000,
-              B00010000, B00100000, B01000000, B10000000};
+int bits[] = {B00000001, B10000000, B01000000, B00100000,
+              B00010000, B00001000, B00000100, B00000010};
 
 void scanColumn(int colNum);
 void noteOn(int row, int col);
