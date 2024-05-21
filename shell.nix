@@ -1,5 +1,4 @@
-{ pkgs ? import <nixpkgs> {} }:
-let
+{pkgs ? import <nixpkgs> {}}: let
 in
   pkgs.mkShell {
     buildInputs = [
@@ -7,4 +6,7 @@ in
       # optional: needed as a programmer i.e. for esp32
       # pkgs.avrdude
     ];
-}
+    shellHook = ''
+      exec fish
+    '';
+  }
