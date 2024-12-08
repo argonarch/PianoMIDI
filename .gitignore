@@ -3,3 +3,5 @@
 .ccls-cache/
 .stfolder/
 .stignore
+.direnv/
+.platformio/
